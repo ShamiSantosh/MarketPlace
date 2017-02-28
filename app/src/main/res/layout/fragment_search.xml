@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.shami.marketprice.FragmentSearch">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="0px" android:layout_height="0px"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical" />
+
+        <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Search Product"
+        android:id="@+id/product_autoCompleteTextView"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="54dp"
+        android:ems="10" />
+
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Search Market"
+        android:id="@+id/market_autoCompleteTextView"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="108dp"
+        android:ems="10" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/productButton"
+        android:src="@drawable/arrowdown"
+        android:layout_above="@+id/marketButton"
+        android:layout_alignBottom="@+id/product_autoCompleteTextView"
+        android:layout_toRightOf="@+id/product_autoCompleteTextView"
+        android:layout_toEndOf="@+id/product_autoCompleteTextView" />
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/marketButton"
+        android:src="@drawable/arrowdown"
+        android:layout_alignBottom="@+id/market_autoCompleteTextView"
+        android:layout_toRightOf="@+id/product_autoCompleteTextView"
+        android:layout_toEndOf="@+id/product_autoCompleteTextView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_below="@+id/market_autoCompleteTextView"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toStartOf="@+id/search" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search"
+            android:layout_below="@+id/market_autoCompleteTextView"
+            android:layout_alignRight="@+id/marketButton"
+            android:layout_alignEnd="@+id/marketButton" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/table1"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="210dp"
+                android:background="#9D9D9D"
+                 >
+
+                <TextView
+                    android:text="Min Value"
+                    android:padding="4dip"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="Mod Value"
+                    android:padding="4dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:text="Mod Value"
+                    android:padding="4dip"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:background="#CDCDCD"
+
+                >
+                <TextView
+                    android:text=""
+                    android:padding="4dip"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text=""
+                    android:padding="4dip" />
+
+                <TextView
+                    android:text=""
+                    android:padding="4dip" />
+
+            </TableRow>
+         </TableLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
